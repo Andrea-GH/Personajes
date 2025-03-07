@@ -1,0 +1,112 @@
+.cartoon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .cartoon div {
+    position: absolute;
+    box-sizing: border-box;
+  }
+  
+  .b {
+    border: 1vmin solid black;
+  }
+  
+  .r {
+    border-radius: 100%;
+  }
+  
+  .hb::before,
+  .ha::after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+  
+  /****/
+  .cartoon {
+    --skin: #fca;
+    --dark: #e96;
+    --hair: #630;
+    --robe: #222;
+    width: 80vmin;
+    height: 80vmin;
+  }
+  
+  .cartoon::after {
+    width: 120%;
+    bottom: 0;
+    border-top: 1vmin solid black;
+    left: 50%;
+    transform: translate(-50%, 25%);
+  }
+  
+.pants {
+    width: 25%;
+    height: 20%;
+    bottom: 6%;
+    left: 24%;
+    background: #444;
+  }
+  
+  .pants + .pants {
+    left: auto;
+    right: 24%;
+  }
+  
+  .shoe {
+    width: 28%;
+    left: 20.5%;
+    height: 9%;
+    bottom: 0;
+    border-radius: 200% 90% 0 5% / 400% 0 0 0;
+    background: var(--robe);
+  }
+  
+  .shoe + .shoe {
+    left: auto;
+    right: 20.5%;
+    border-radius: 90% 200% 5% 0% / 0 400% 0 0;
+  }
+
+  .arm {
+    top: 45%;
+    left: 35%;
+    height: 35%;
+    width: 40%;
+    transform: translate(-50%, 0) rotate(20deg);
+    border-radius: 100% 100% 40% 40% / 200% 200% 0 0;
+    background: var(--robe);
+  }
+  
+  .arm + .arm {
+    left: auto;
+    right: 35%;
+    transform: translate(50%, 0) rotate(-20deg);
+  }
+  
+  .hand {
+    width: 15%;
+    height: 15%;
+    top: 69%;
+    left: 12%;
+    background: var(--skin);
+  }
+  
+  .hand + .hand {
+    left: 73%;
+  }
+  
+  .wand {
+    width: 20%;
+    height: 4%;
+    border-radius: 3vmin 100% 100% 3vmin;
+    transform: rotate(30deg);
+    top: 81%;
+    right: -2%;
+    background: var(--hair)
+  }
+  
+  
