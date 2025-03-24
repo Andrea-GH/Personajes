@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papa con Manos y Pies</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f3f3f3;
+        }
+
+        .papa {
+            width: 150px;
+            height: 200px;
+            background-color: #e0b97d;
+            border-radius: 50%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Manos */
+        .mano {
+            position: absolute;
+            width: 30px;
+            height: 60px;
+            background-color: #d8a55d;
+            border-radius: 10px;
+        }
+
+        .mano.izquierda {
+            left: -40px;
+            top: 50px;
+        }
+
+        .mano.derecha {
+            right: -40px;
+            top: 50px;
+        }
+
+        /* Pies */
+        .pie {
+            position: absolute;
+            width: 50px;
+            height: 30px;
+            background-color: #d8a55d;
+            border-radius: 20px;
+        }
+
+        .pie.izquierdo {
+            left: 20px;
+            bottom: -30px;
+        }
+
+        .pie.derecho {
+            right: 20px;
+            bottom: -30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="papa">
+        <div class="mano izquierda"></div>
+        <div class="mano derecha"></div>
+        <div class="pie izquierdo"></div>
+        <div class="pie derecho"></div>
+    </div>
+</body>
+</html>
